@@ -8,7 +8,6 @@ const del = require('del')
 const { spawn } = require('child_process')
 const webpack = require('webpack')
 const Listr = require('listr')
-const Multispinner = require('multispinner')
 
 
 const mainConfig = require('./webpack.main.config')
@@ -35,8 +34,8 @@ async function build () {
 
   del.sync(['dist/electron/*', '!.gitkeep'])
 
-  const tasks1 = ['main', 'renderer']
-  const m = new Multispinner(tasks1, {
+  const tasks = ['main', 'renderer']
+  const m = new Multispinner(tasks, {
     preText: 'building',
     postText: 'process'
   })
