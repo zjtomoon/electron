@@ -6,13 +6,22 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'landing-page',
-      component: require('@/components/LandingPage').default
+      path: '/Home',
+      name: 'Home',
+      component: Home
     },
     {
-      path: '*',
-      redirect: '/'
+      path: '/',
+      name: 'Login',
+      // eslint-disable-next-line no-undef
+      component: Login
+    },
+    {
+      path: '/Register',
+      name: 'Register',
+      // eslint-disable-next-line no-undef
+      component: Register
     }
+
   ]
 })
