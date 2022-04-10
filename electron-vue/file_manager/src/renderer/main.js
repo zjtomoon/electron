@@ -5,12 +5,6 @@ import App from './App'
 import router from './router'
 import store from './store'
 
-// use antd-vue
-import Antd from 'ant-design-vue'
-import 'ant-design-vue/dist/antd.css'
-
-Vue.use(Antd)
-
 if (!process.env.IS_WEB) Vue.use(require('vue-electron'))
 Vue.http = Vue.prototype.$http = axios
 Vue.config.productionTip = false
