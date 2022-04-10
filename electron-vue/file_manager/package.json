@@ -52,6 +52,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "element-ui": "^2.15.6",
     "multispinner": "^0.2.1",
     "vue": "^2.5.16",
     "vue-electron": "^1.0.6",
