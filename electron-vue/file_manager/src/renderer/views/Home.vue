@@ -1,18 +1,21 @@
 <template>
-    <div>
-        <h1>Hello,electron-vue!</h1>
-        <FileUpload/>
+    <div id="Home">
+        <FIleManage/>
     </div>
 </template>
 
 <script>
-    import FileUpload from "./FileUpload";
+    import FIleManage from "./FileManage";
     export default {
         name: "Home",
-        components: {FileUpload}
+        components: {FIleManage}
     }
 </script>
 
 <style scoped>
-
+    #Home {
+        font-family: 'Avenir', Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
 </style>
